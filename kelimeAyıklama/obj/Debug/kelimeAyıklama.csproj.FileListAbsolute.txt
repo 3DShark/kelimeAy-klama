@@ -4,3 +4,9 @@ C:\Users\ozanb\source\repos\kelimeAyıklama\kelimeAyıklama\bin\Debug\kelimeAyı
 C:\Users\ozanb\source\repos\kelimeAyıklama\kelimeAyıklama\obj\Debug\kelimeAyıklama.csprojAssemblyReference.cache
 C:\Users\ozanb\source\repos\kelimeAyıklama\kelimeAyıklama\obj\Debug\kelimeAyıklama.exe
 C:\Users\ozanb\source\repos\kelimeAyıklama\kelimeAyıklama\obj\Debug\kelimeAyıklama.pdb
+C:\Users\ozanb\source\repos\kelimeAyiklama\kelimeAyıklama\bin\Debug\kelimeAyıklama.exe.config
+C:\Users\ozanb\source\repos\kelimeAyiklama\kelimeAyıklama\bin\Debug\kelimeAyıklama.exe
+C:\Users\ozanb\source\repos\kelimeAyiklama\kelimeAyıklama\bin\Debug\kelimeAyıklama.pdb
+C:\Users\ozanb\source\repos\kelimeAyiklama\kelimeAyıklama\obj\Debug\kelimeAyıklama.csprojAssemblyReference.cache
+C:\Users\ozanb\source\repos\kelimeAyiklama\kelimeAyıklama\obj\Debug\kelimeAyıklama.exe
+C:\Users\ozanb\source\repos\kelimeAyiklama\kelimeAyıklama\obj\Debug\kelimeAyıklama.pdb

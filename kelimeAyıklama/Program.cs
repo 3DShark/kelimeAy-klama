@@ -18,7 +18,8 @@ namespace kelimeAyıklama
             string kelimeyeYazmaYolu = @"C:\Users\ozanb\Desktop\kelimeListesiTemizlendiYeni.txt";
             
           //  string anlamaYazmaYolu = @"C:\Users\ozanb\Desktop\kelimeListesiAnlamlarTemizlendi.txt";
-          // kelime yazarken kullanılacak
+          
+            // kelime yazarken kullanılacak hangi satırlarda yok yazdığını tutup kelime yazarken bu satırları otomatik atlatıyoruz
             string jYazmaYolu = @"C:\Users\ozanb\Desktop\j.txt";
            
             string[] lines = System.IO.File.ReadAllLines(okumaYolu);
