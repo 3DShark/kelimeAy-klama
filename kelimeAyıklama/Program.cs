@@ -20,30 +20,35 @@ namespace kelimeAyıklama
           //  string anlamaYazmaYolu = @"C:\Users\ozanb\Desktop\kelimeListesiAnlamlarTemizlendi.txt";
           
             // kelime yazarken kullanılacak hangi satırlarda yok yazdığını tutup kelime yazarken bu satırları otomatik atlatıyoruz
-            string jYazmaYolu = @"C:\Users\ozanb\Desktop\j.txt";
+           
            
             string[] lines = System.IO.File.ReadAllLines(okumaYolu);
             List<char> yazılacakArray = new List<char>();
             List<string> yazılacakString = new List<string>();
             char[] karakterler;
+            int kelimeSayısı = 0;
+
+
+            // Dosyaya Yazabilmek için gereken tanımlamalar
             FileStream fs = new FileStream(kelimeyeYazmaYolu, FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fs);
             
-            int j=0,i=0,k=0;
-           
-           // KELİME YAZARKEN KULLANILACAK
-            string[] jArray = File.ReadAllLines(jYazmaYolu);
+         
+
+            // KELİME YAZARKEN KULLANILACAK
+            /*
+             *  string jYazmaYolu = @"C:\Users\ozanb\Desktop\j.txt";
+             *  string[] jArray = File.ReadAllLines(jYazmaYolu);
             List<int> hangiSatır = new List<int>();
-            
-            
             FileStream ts = new FileStream(jYazmaYolu, FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter aw = new StreamWriter(ts);
+            */
 
-            
             // Veri Çektiğimiz txt dosyasını okuyoruz
-            
+
             foreach (string line in lines)
             {
+                //  satır *yok içeriyorsa direk satırı atlıyoruz
                 if (line.Contains("*yok"))
                     continue;
                
@@ -51,7 +56,6 @@ namespace kelimeAyıklama
                 karakterler = line.ToCharArray();
                 foreach(char karakter in karakterler)
                 {
-                   
                     // ANLAM YAZARKEN KULLANILACAK
                     
                     /*
@@ -61,7 +65,6 @@ namespace kelimeAyıklama
 
 
                      //KELİME YAZARKEN KULLANILACAK
-                     
                     if (karakter == '*')
                         break;
 
@@ -108,24 +111,18 @@ namespace kelimeAyıklama
                     
                 }
                   */
-
-
-
-
-
-
             }
          
             // Dosyaya yazma İşlemi
             foreach(string yaz in yazılacakString)
             {
-                k++;
+                kelimeSayısı++;
                 Console.WriteLine(yaz);
                 sw.WriteLine(yaz);
                 
             }
 
-            Console.WriteLine(k);
+            Console.WriteLine(kelimeSayısı);
             
             
             sw.Flush();
